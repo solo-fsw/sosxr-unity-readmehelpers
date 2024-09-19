@@ -33,5 +33,5 @@ Go to your Terminal and run the following command to create a symbolic link from
 ### Markdown Viewer
 By default Markdown files render as plain text in Unity. The excellent and Open Source [Markdown Viewer](https://github.com/mrstruijk/Markdownviewer) can alleviate this. Follow the instructions on that repo on how to get it into your Unity Project.
 
-## Showing Readme on starting Unity
+### Showing Readme on starting Unity
 To show the README as soon as you're starting Unity, the `ReadmeShower.cs` script is in the Editor folder. This script will open the README.md file in the Inspector on opening Unity. It looks for the first file called `README.md` it can find. If you have multiple READMEs throughout your project, the one that's directly in the Asset folder (compared to those in subfolders) will be found.
