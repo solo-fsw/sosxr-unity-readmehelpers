@@ -5,17 +5,6 @@ using UnityEngine;
 
 public static class ReadmeHelpers
 {
-    public static string FullPath
-    {
-        get
-        {
-            var fullPath = Application.dataPath;
-
-            return fullPath;
-        }
-    }
-
-
     /// <summary>
     ///     Creates a README.md file in the Assets folder.
     ///     It grabs a file called README_template.md from a Resources folder.
@@ -25,6 +14,13 @@ public static class ReadmeHelpers
     private static void CreateReadmeAtRoot()
     {
         var folderDirectory = Path.GetFullPath(Application.dataPath + "/Assets/..");
+        var fullPath = folderDirectory + "/" + "README.md";
+
+        if (File.Exists(fullPath))
+        {
+            Debug.LogWarning("README.md already exists at " + fullPath + ". Will not create another one.");
+            return;
+        }
 
         var template = Resources.Load<TextAsset>("README_template"); // From Resources folder
 
@@ -32,7 +28,7 @@ public static class ReadmeHelpers
         {
             var templateContent = template.text;
 
-            using var sw = File.CreateText(folderDirectory + "/" + "README.md");
+            using var sw = File.CreateText(fullPath);
 
             sw.WriteLine("# " + GetProjectName());
             sw.WriteLine(templateContent);
@@ -48,7 +44,7 @@ public static class ReadmeHelpers
 
     public static string GetProjectName()
     {
-        var split = FullPath.Split('/');
+        var split = Application.dataPath.Split('/');
 
         var projectName = split[^2];
 

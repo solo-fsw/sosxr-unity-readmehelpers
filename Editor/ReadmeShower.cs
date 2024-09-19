@@ -27,7 +27,7 @@ public class ReadmeShower : Editor
     }
 
 
-    [MenuItem("SOSXR/Readme")]
+    [MenuItem("SOSXR/Show README.md", priority = 100)]
     private static string SelectReadme()
     {
         var mdFilePaths = Directory.GetFiles(Application.dataPath, "*.md", SearchOption.AllDirectories);
