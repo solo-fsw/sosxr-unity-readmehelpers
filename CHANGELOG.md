@@ -12,6 +12,7 @@ The changelog format is based on [Keep a Changelog](https://keepachangelog.com/e
 - Function to create a readme file from a template
 - Template
 - Bundled all readme helper scripts into a single package
+- Added Changelog
 
 ### Fixed
 
