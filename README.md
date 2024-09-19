@@ -25,10 +25,10 @@ Go to your Terminal and run the following command to create a symbolic link from
   # From your repository root
   mkdir .github
   cd .github
-  ln -s ../YOUR_UNTITY_PROJECT_NAME/Assets/README.md README.md 
+  ln -s ../YOUR_UNITY_PROJECT_NAME/Assets/README.md README.md 
 ```
 
-> Note that 'YOUR_UNTITY_PROJECT_NAME' should be replaced by the current Unity Project name, so that the entire path to the README.md file is correct.
+> Note that 'YOUR_UNITY_PROJECT_NAME' should be replaced by the current Unity Project name, so that the entire path to the README.md file is correct.
    
 ### Markdown Viewer
 By default Markdown files render as plain text in Unity. The excellent and Open Source [Markdown Viewer](https://github.com/mrstruijk/Markdownviewer) can alleviate this. Follow the instructions on that repo on how to get it into your Unity Project.
