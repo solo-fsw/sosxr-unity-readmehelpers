@@ -19,6 +19,7 @@ public static class ReadmeHelpers
         if (File.Exists(fullPath))
         {
             Debug.LogWarning("README.md already exists at " + fullPath + ". Will not create another one.");
+
             return;
         }
 

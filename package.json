@@ -5,7 +5,6 @@
   "description": "A collection of scripts to help you create a README.md file for your Unity project.",
   "unity": "2021.3",
   "dependencies": {
-
   },
   "keywords": [
     "Unity",
