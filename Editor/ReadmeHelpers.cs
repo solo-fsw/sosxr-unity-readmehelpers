@@ -10,7 +10,7 @@ public static class ReadmeHelpers
     ///     It grabs a file called README_template.md from a Resources folder.
     /// </summary>
     [MenuItem("Assets/Create/SOSXR/Create README.md file in Assets folder", priority = 100)]
-    [MenuItem("SOSXR/Create README.md file in Assets folder")]
+    [MenuItem("SOSXR/Setup/Create README.md file in Assets folder")]
     private static void CreateReadmeAtRoot()
     {
         var folderDirectory = Path.GetFullPath(Application.dataPath + "/Assets/..");
