@@ -8,7 +8,7 @@
 1. Open the Unity project you want to install this package in.
 2. Open the Package Manager window.
 3. Click on the `+` button and select `Add package from git URL...`.
-4. Paste the URL of this repo into the text field and press `Add`.
+4. Paste the URL of this repo into the text field and press `Add`. Make sure it ends with `.git`.
 
 ## Reasoning
 Using these tools you can have a README that's in your Unity Assets folder, but still be shown on Github as the default README. I found this to be a much easier way to keep the README up to date, as it's always in the same place as the rest of the Unity project.
